@@ -15,8 +15,8 @@ body{
     justify-content: center;
 }
 .slider{
-    width: 600px;
-    height: 400px;
+    width: 40%;
+    height: 60%;
     overflow: hidden;
 }
 .mem-slider__navigation{
@@ -29,14 +29,14 @@ body{
     display: flex;
 }
 .bar{
-    height: 15px;
-    width: 30px;
+    height: 1rem;
+    width: 2rem;
     margin: 6px;
     cursor: pointer;
     background-color: #ffffff;
     opacity: 0.5;
     border-radius: 10px;
-    transition: all .4s ease;
+    transition: all .6s ease;
 }
 .bar:hover{
     opacity: 1;
@@ -50,7 +50,7 @@ body{
 
 .slide{
     width: 25%;
-   transition: all .6s ease;
+    transition: all .6s ease;
 }
 .slide img{
     width: 100%;
@@ -72,21 +72,40 @@ body{
 
 
 .mems__texts{
-    width: 300px;
-    height: 20px;
+    height: 2rem;
     overflow: hidden;
     margin-top: 10px;
     text-align: center;
+    transition: all .6s ease;
 }
 
 
 .mems__text{
     width: 300px;
-    height: 20px;
+    height: 2rem;
+    transition: all .6s ease;
+    font-size: 2rem;
 }
 .mems__texts-container{
     width: 400%;
     height: 100%;
     display: flex;
+    transition: all 0.6s ease;
 }
 
+@media (max-width: 1024px){
+    .slider{
+        width: 60%;
+        height: 40%;
+    }
+}
+@media (max-width: 500px) {
+    .slider{
+        width: 60%;
+        height: 35%;
+    }
+    .mems__texts, .mems__text{
+        height: 1rem;
+        font-size: 1rem;
+    }
+}
