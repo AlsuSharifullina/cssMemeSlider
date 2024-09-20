@@ -101,11 +101,11 @@ body{
 }
 .mems__texts-container{
     display: flex;
-    width: 400%; /* 4 текста, по 25% ширины */
+    width: 400%; 
     transition: margin-left 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 .mems__text{
-    width: 25%; /* Каждый текст занимает 25% ширины родителя */
+    width: 25%; 
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
@@ -115,14 +115,17 @@ body{
         width: 60%;
         height: 40%;
     }
+    .mems__texts{
+        width: 40%;
+    }
+
 }
 @media (max-width: 500px) {
     .slider{
         width: 60%;
         height: 35%;
     }
-    .mems__texts, .mems__text{
-        height: 1rem;
-        font-size: 1rem;
+    .mems__texts{
+        width: 40%;
     }
 }
